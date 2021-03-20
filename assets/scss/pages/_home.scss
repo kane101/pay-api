@@ -1,0 +1,138 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.s-hero {
+	min-height: 80rem;
+	background: url(../images/bg-pattern-circle.svg) calc(100% - -140px) -250px / 90rem
+			90rem no-repeat,
+		$bg-light;
+	&__wrapper {
+		grid-template-columns: 1.5fr 1fr;
+		padding-top: 15rem;
+	}
+	&__img {
+		margin: 0 auto;
+	}
+	&__contact-link {
+		color: $light-san-juan-blue;
+		padding-left: 2.5rem;
+	}
+	&__contact-link a {
+		color: $san-juan-blue;
+		text-decoration: underline;
+		font-weight: 600;
+	}
+}
+
+.s-affiliates {
+	background: url(../images/bg-pattern-circle.svg) -400px -500px/9rem 90rem
+			no-repeat,
+		$mirage-blue;
+	color: $text-primary;
+	&__content {
+		max-width: 47.5rem;
+		h2 {
+			color: $link-water-white;
+		}
+	}
+	&__links {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 100px);
+		align-items: center;
+		justify-items: center;
+	}
+}
+
+.s-showcase {
+	background: url(../images/bg-pattern-circle.svg) calc(100% - -450px) 50% /
+			78rem 78rem no-repeat,
+		$bg-light;
+	.s-showcase__wrapper {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		padding: 7rem 0;
+	}
+	.s-showcase__content {
+		max-width: 40rem;
+	}
+	.services {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3.5rem;
+		padding: 4rem 0;
+	}
+}
+
+@include breakpoint(md) {
+	.s-hero {
+		background: url(../images/bg-pattern-circle.svg) center -580px / 120rem 90rem
+				no-repeat,
+			$bg-light;
+		padding-top: 0;
+		padding-bottom: 100px;
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+		&__heading {
+			max-width: 45rem;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		&__img {
+			max-width: 30rem;
+		}
+		&__contact-link {
+			text-align: center;
+			margin-top: 2.5rem;
+			padding-left: 0;
+		}
+	}
+
+	.s-affiliates {
+		background: url(../images/bg-pattern-circle.svg) center -600px / 90rem 90rem
+				no-repeat,
+			$mirage-blue;
+		.container.grid {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		&__links {
+			grid-template-columns: repeat(3, 1fr);
+			margin-bottom: 5rem;
+		}
+	}
+
+	.s-showcase {
+		.s-showcase__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.s-showcase__content {
+			max-width: 600px;
+		}
+	}
+}
+
+@include breakpoint(sm) {
+	.s-hero {
+		background-position: center calc(0% - 530px);
+	}
+	.s-affiliates__links {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.s-showcase .services {
+		grid-template-columns: 1fr;
+	}
+}
+
+@include breakpoint(xs) {
+	.s-affiliates__links {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, 50px);
+	}
+}

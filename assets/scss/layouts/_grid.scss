@@ -1,0 +1,40 @@
+/* CSS GRID CUSTOM GRID */
+@for $i from 1 through $grid-columns {
+	.grid-#{$i} {
+		display: grid;
+		grid-template-columns: repeat($i, 1fr);
+		-ms-grid-columns: (1fr) [#{$i}];
+		grid-template-rows: repeat($i, 1fr);
+		grid-gap: $grid-gap;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+}
+
+@for $i from 0 through 10 {
+	.order-#{$i} {
+		order: $i;
+	}
+}
+
+@each $size, $bp in $breakpoints {
+	@media (min-width: #{$bp}) {
+		@for $i from 1 through $grid-columns {
+			.grid-#{$size}-#{$i} {
+				display: grid;
+				grid-template-columns: repeat($i, 1fr);
+				-ms-grid-columns: (1fr) [#{$i}];
+				grid-template-rows: repeat($i, 1fr);
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+			}
+		}
+		@for $i from 0 through 10 {
+			.order-#{$size}-#{$i} {
+				order: $i;
+			}
+		}
+	}
+}

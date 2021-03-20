@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	text-align: center;
+	padding: 1.2rem 2.8rem;
+	border-radius: 50px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline-block;
+	transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out,
+		box-shadow 0.7s ease-in-out;
+	&__primary {
+		background-color: $dark-pink;
+		color: $white;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $charm-pink;
+			box-shadow: #36536b 10px 10px 25px -10px;
+		}
+	}
+	&__secondary--light {
+		background-color: transparent;
+		border: 1px solid $white;
+		color: $white;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $white;
+			color: $mirage-blue;
+		}
+	}
+	&__secondary--dark {
+		background-color: transparent;
+		border: 1px solid $san-juan-blue;
+		color: $san-juan-blue;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $san-juan-blue;
+			color: $white;
+		}
+	}
+}

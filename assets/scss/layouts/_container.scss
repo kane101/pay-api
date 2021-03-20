@@ -1,0 +1,20 @@
+.container {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 $grid-gap;
+	height: 100%;
+	&--narrow {
+		width: 100%;
+		max-width: $max-width-narrow;
+		margin: 0 auto;
+		padding: 0 $grid-gap;
+	}
+
+	&--full {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 $grid-gap;
+	}
+}

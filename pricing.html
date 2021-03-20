@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Pay App" />
+	<title>Payap</title>
+	<link rel="canonical" href="https://www.payap.com" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1b262f">
+	<meta name="msapplication-TileColor" content="#1b262f">
+	<meta name="theme-color" content="#1b262f">
+	<link rel="apple-touch-icon" href="./images/vs.png" />
+	<meta property="og:title" content="Payap" />
+	<meta property="og:description" content="Build app using our api" />
+	<meta property="og:url" content="https://www.payap.com" />
+	<meta property="og:image" content="./assets/images/logo.svg" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Payap" />
+	<link rel="stylesheet" href="./assets/scss/main.css">
+	<link rel="stylesheet" href="./assets/scss/main.css.map">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+	<input type="checkbox" class="d-none" id="nav-state">
+	<div class="wrapper">
+		<!-- Page Header -->
+		<header class="header" role="banner">
+			<div class="container flex ai-c jc-b">
+
+				<!-- Page Logo -->
+				<a class="header__logo" href="/"></a>
+
+				<!-- Page Navigation -->
+				<nav class="header__navigation" role="navigation">
+					<ul class="menu" role="list">
+						<li class="menu__item"><a class="menu__link" href="/pricing.html">Pricing</a></li>
+						<li class="menu__item"><a class="menu__link" href="/about.html">About</a></li>
+						<li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+						<li class="menu__item"><button class="btn btn__primary">Schedule a Demo</button></li>
+					</ul>
+				</nav>
+
+				<!-- Mobile Nav Button -->
+				<label class="header__menu-btn" for="nav-state">
+					<span></span>
+					<span></span>
+				</label>
+			</div>
+		</header>
+		<main class="pricing-main bg-light" role="main">
+			<div class="container">
+				<h2 class="h2">Pricing</h2>
+				<div class="plan grid section-padding">
+					<div class="plan__column">
+						<div class="plan__content">
+							<h3 class="plan__heading">Free Plan</h3>
+							<p class="plan__text">Build and test using our core set of products with up to 100 API requests</p>
+							<h2 class="plan__price">$0.00</h2>
+						</div>
+						<div class="plan__list-wrapper">
+							<ul class="plan__list">
+								<li class="plan__list-item checked">Transactions</li>
+								<li class="plan__list-item checked">Auth</li>
+								<li class="plan__list-item checked">Identity</li>
+								<li class="plan__list-item">Investments</li>
+								<li class="plan__list-item">Assets</li>
+								<li class="plan__list-item">Liabilities</li>
+								<li class="plan__list-item">Income</li>
+							</ul>
+						</div>
+						<a href="#" class="plan__btn btn btn__secondary--dark">Request Access</a>
+					</div>
+					<div class="plan__column">
+						<div class="plan__content">
+							<h3 class="plan__heading">Basic Plan</h3>
+							<p class="plan__text">Launch your project with unlimited requests and no contractual minimums</p>
+							<h2 class="plan__price">$249.00</h2>
+						</div>
+						<div class="plan__list-wrapper">
+							<ul class="plan__list">
+								<li class="plan__list-item checked">Transactions</li>
+								<li class="plan__list-item checked">Auth</li>
+								<li class="plan__list-item checked">Identity</li>
+								<li class="plan__list-item checked">Investments</li>
+								<li class="plan__list-item checked">Assets</li>
+								<li class="plan__list-item">Liabilities</li>
+								<li class="plan__list-item">Income</li>
+							</ul>
+						</div>
+						<a href="#" class="plan__btn btn btn__secondary--dark">Request Access</a>
+					</div>
+					<div class="plan__column">
+						<div class="plan__content">
+							<h3 class="plan__heading">Premium Plan</h3>
+							<p class="plan__text">Get tailored solutions, volume pricing, and dedicated support for your team</p>
+							<h2 class="plan__price">$499.00</h2>
+						</div>
+						<div class="plan__list-wrapper">
+							<ul class="plan__list">
+								<li class="plan__list-item checked">Transactions</li>
+								<li class="plan__list-item checked">Auth</li>
+								<li class="plan__list-item checked">Identity</li>
+								<li class="plan__list-item checked">Investments</li>
+								<li class="plan__list-item checked">Assets</li>
+								<li class="plan__list-item checked">Liabilities</li>
+								<li class="plan__list-item checked">Income</li>
+							</ul>
+						</div>
+						<a href="#" class="plan__btn btn btn__secondary--dark">Request Access</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Start of Footer section -->
+		<footer class="footer">
+			<div class="bg-light section-padding pt-1">
+				<div class="container flex jc-b ai-c fd-c fd-md-r">
+					<h2 class="mb-4 mb-md-0 text-center md-text-left">Ready to start?</h2>
+					<form class="demo-form">
+						<div class="form-group">
+							<input class="demo-form__input" type="text" placeholder="Enter email address">
+							<input type="submit" class="btn btn__primary demo-form__btn" value="Schedule a Demo">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="flex bg-dark py-4">
+				<div class="container flex jc-b fd-c fd-sm-r">
+					<div class="flex ai-c fd-c fd-sm-r">
+						<a class="footer__logo" href="/">
+							<div class="footer__logo-img mb-4 mb-sm-0"></div>
+						</a>
+						<nav class="footer__nav" role="navigation">
+							<ul class="footer__links mb-4 mb-sm-0 flex fd-c fd-sm-r">
+								<li class="footer__link my-2 my-md-0 ml-0 ml-sm-5 text-center"><a href="/pricing.html">Pricing</a></li>
+								<li class="footer__link my-2 my-md-0 ml-0 ml-sm-5 text-center"><a href="/about.html">About</a></li>
+								<li class="footer__link my-2 my-md-0 ml-0 ml-sm-5 text-center"><a href="/contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<ul class="footer-socials socials flex jc-c ai-c">
+						<li class="socials__item ml-4 mx-3">
+							<a href="" class="socials__link socials__link--fb"></a>
+						</li>
+						<li class="socials__item ml-4 mx-3">
+							<a href="" class="socials__link socials__link--tw">
+							</a>
+						</li>
+						<li class="socials__item ml-4 mx-3">
+							<a href="" class="socials__link socials__link--li">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- End of Footer section -->
+	</div>
+
+</body>
+
+</html>

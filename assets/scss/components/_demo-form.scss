@@ -1,0 +1,48 @@
+.demo-form {
+	border-radius: 25px;
+	max-width: 475px;
+	width: 100%;
+	box-shadow: 10px 10px 25px -10px #36536b;
+	&__input {
+		width: 100%;
+		border-radius: 25px;
+		text-indent: 2.5rem;
+		padding-right: 110px;
+		border: none;
+		outline: none;
+	}
+	&__btn {
+		margin-left: -100px;
+	}
+	.form-group {
+		display: flex;
+	}
+}
+
+@include breakpoint(md) {
+	.demo-form {
+		margin: 0 auto;
+	}
+}
+
+@include breakpoint(sm) {
+	.demo-form {
+		box-shadow: none;
+		&__input {
+			max-width: initial;
+			width: 100%;
+			height: 50px;
+			margin-bottom: 1.5rem;
+			box-shadow: 10px 10px 25px -10px #36536b;
+			padding: 0;
+		}
+		&__btn {
+			margin-left: 0;
+			width: 100%;
+		}
+		.form-group {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

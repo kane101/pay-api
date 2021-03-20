@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$xs: 480px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1400px;
+
+/// Container's maximum width
+/// @type Length
+
+$max-width: $lg !default;
+$max-width-narrow: 920px !default;
+
+$breakpoints: (
+	'xs': $xs,
+	'sm': $sm,
+	'md': $md,
+	'lg': $lg,
+	'xl': $xl,
+) !default;
+
+$grid-columns: 5;
+$grid-gap: 3rem;
+
+// Primary
+$dark-pink: #ba4270;
+$link-water-white: #fbfcfe;
+
+// Secondary
+$san-juan-blue: #36536b;
+$mirage-blue: #1b262f;
+$charm-pink: #da6d97;
+$light-san-juan-blue: #6c8294;
+
+$black: #000;
+$white: #fff;
+
+$text-primary: #d8d8d8;
+
+$bg-light: #edf3f8;

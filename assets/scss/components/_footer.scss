@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+	h2 {
+		color: $san-juan-blue;
+	}
+	&__logo {
+		width: 135px;
+		height: 40px;
+		background: url(../images/logo-light.svg) center/cover no-repeat;
+		margin-right: 3rem;
+	}
+	&__link {
+		list-style-type: none;
+		a {
+			color: $text-primary;
+			font-weight: 600;
+			&:hover {
+				color: $link-water-white;
+			}
+		}
+	}
+	.socials {
+		&__item {
+			list-style-type: none;
+		}
+		.socials__link {
+			width: 25px;
+			height: 25px;
+			display: block;
+		}
+		.socials__link--fb {
+			background: url(../images/facebook.svg) center/cover no-repeat;
+			@include on-event {
+				background: url(../images/facebook-primary.svg) center/cover no-repeat;
+			}
+		}
+		.socials__link--tw {
+			background: url(../images/twitter.svg) center/cover no-repeat;
+			@include on-event {
+				background: url(../images/twitter-primary.svg) center/cover no-repeat;
+			}
+		}
+		.socials__link--li {
+			background: url(../images/linkedin.svg) center/cover no-repeat;
+			@include on-event {
+				background: url(../images/linkedin-primary.svg) center/cover no-repeat;
+			}
+		}
+	}
+}
